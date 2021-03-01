@@ -1,0 +1,76 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<div class="container-fluid">
+    <div class="row form-row">
+        <div class="col-5">
+            <div class="row mb-4">
+                <div class="col-4">
+                    <label class="mb-0"> Description </label>
+                </div>
+                <div class="col-8 pl-3">
+                    <textarea class="form-control" id="desc" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0"> Quantité </label>
+                </div>
+                <div class="col-8 ">
+                    <input class="form-control" id="qte" type="number" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0"> Groupe de produit </label>
+                </div>
+                <div class="col-8">
+                    <select class="form-control" id="gpe">
+
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0"> Produit </label>
+                </div>
+                <div class="col-8">
+                    <select class="form-control" id="prd">
+
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-4">
+                    <label class="mb-0"> Prix Unit TTC </label>
+                </div>
+                <div class="col-8">
+                    <input class="form-control" id="qte" type="number" />
+                </div>
+            </div>
+            <div class="row px-3 mb-4">
+                <button class="btn btn-primary w-100">
+                    <i class="icon-plus"></i>
+                    Ajouter
+                </button>
+            </div>
+            <div class="row px-3">
+                <button class="btn btn-primary w-100">
+                    <i class="icon-print"></i>
+                    Imprimer un devie
+                </button>
+            </div>
+
+        </div>
+        <div class="col-7 px-0">
+            <ag-grid-angular [style]="gridWith" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+            </ag-grid-angular>
+            <div class=" row mt-2">
+                <div class="col-6"></div>
+                <label for="total" class="col-3 pr-0">Montant Total</label>
+                <div class="col-3">
+                    <input class="form-control total" type="text" disabled [(ngModel)]="total" id="total">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

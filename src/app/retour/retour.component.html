@@ -1,0 +1,41 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height: calc(100vh - 100px);">
+    <div style="width:66%;">
+        <div class="row mb-3 form-row">
+            <div class="col-3">
+                <label class="mb-0">Quantité</label>
+            </div>
+            <div class="col-9">
+                <input type="number" class="form-control" id="Qte">
+            </div>
+        </div>
+        <div class="row mb-3 form-row">
+            <div class="col-3">
+                <label class="mb-0">Groupe de produit</label>
+            </div>
+            <div class="col-9">
+                <select class="form-control" id="gpe">
+
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3 form-row">
+            <div class="col-3">
+                <label class="mb-0">Produit</label>
+            </div>
+            <div class="col-9">
+                <select class="form-control" id="produit"></select>
+            </div>
+        </div>
+        <div class="row justify-content-around d-flex pt-3">
+            <button type="button" class="btn btn-primary">
+                <i class="icon-save"></i>
+                Sauvegarder
+            </button>
+            <button type="button" class="btn btn-danger">
+                <i class="icon-trash"></i>
+                Vider
+            </button>
+        </div>
+    </div>
+</div>

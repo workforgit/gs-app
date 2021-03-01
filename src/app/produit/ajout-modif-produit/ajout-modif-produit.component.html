@@ -1,0 +1,81 @@
+<h4 mat-dialog-title cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>{{title}}</h4>
+<hr>
+
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Nom du produit </label>
+    </div>
+    <div class="col-9">
+        <input type="text" [(ngModel)]="prodObj.nomProd" class="form-control">
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Référence </label>
+    </div>
+    <div class="col-9">
+        <input type="text" [(ngModel)]="prodObj.refProd" class="form-control">
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Unité de mesure </label>
+    </div>
+    <div class="col-4">
+        <select [(ngModel)]="prodObj.unite" class="form-control">
+
+        </select>
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Quantite </label>
+    </div>
+    <div class="col-4">
+        <input type="number" [(ngModel)]="prodObj.qte" class="form-control">
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Groupe de produit </label>
+    </div>
+    <div class="col-4">
+        <select [(ngModel)]="prodObj.grp" class="form-control">
+            <option>aaaaaaa</option>
+            <option>bbbbbb</option>
+            <option>cccccc</option>
+        </select>
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Prix unitaire </label>
+    </div>
+    <div class="col-4">
+        <input type="number" [(ngModel)]="prodObj.prixUnitaire" class="form-control">
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Prix d'achat </label>
+    </div>
+    <div class="col-4">
+        <input type="number" [(ngModel)]="prodObj.prixAchat" class="form-control">
+    </div>
+</div>
+<div class="row mb-1">
+    <div class="col-3 d-flex align-items-center">
+        <label class="mb-0"> Inventaire </label>
+    </div>
+    <div class="col-4">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" [(ngModel)]="prodObj.inventaire" id="inv">
+            <label class="custom-control-label" for="inv">&nbsp;</label>
+        </div>
+    </div>
+</div>
+<div class="row mt-2 pr-3 d-flex justify-content-end">
+    <button class="btn btn-primary" (click)="save()"><i class="icon-save" ></i>Sauvegarder</button>
+    <button class="btn btn-danger ml-3" (click)="close()"> <i class="icon-cancel1" ></i> Abondonner </button>
+
+</div>

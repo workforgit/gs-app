@@ -1,0 +1,6 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<app-nav-bar [navBarElements]="navBarElements" (selectedNav)="onSelectNav($event)"></app-nav-bar>
+<div class="container-fluid" [ngSwitch]="selectedNav">
+    <app-clients-details *ngSwitchCase="'Client'" (clientChanged)="clientChangedHandler($event)"></app-clients-details>
+    <app-bon-de-livraison-client *ngSwitchCase="'Bon de livraison'" [client]="client"></app-bon-de-livraison-client>
+</div>

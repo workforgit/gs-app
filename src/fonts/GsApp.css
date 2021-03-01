@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('icomoon.eot?wcb7od');
+    src: url('icomoon.eot?wcb7od#iefix') format('embedded-opentype'), url('icomoon.ttf?wcb7od') format('truetype'), url('icomoon.woff?wcb7od') format('woff'), url('icomoon.svg?wcb7od#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never;*/
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 1em;
+    font-size: 20px;
+}
+
+.big-icon [class^="icon-"],
+.big-icon [class*=" icon-"] {
+    margin-right: 0;
+    font-size: 100px;
+}
+
+.icon-btn [class^="icon-"],
+.big-btn [class*=" icon-"] {
+    font-size: 24px;
+    margin-right: 0;
+}
+
+.icon-cancel1:before {
+    content: "\e900";
+}
+
+.icon-trash:before {
+    content: "\e901";
+}
+
+.icon-add:before {
+    content: "\e902";
+}
+
+.icon-replay:before {
+    content: "\e903";
+}
+
+.icon-cancel:before {
+    content: "\e904";
+}
+
+.icon-next:before {
+    content: "\e905";
+}
+
+.icon-login .path1:before {
+    content: "\e906";
+    color: #607d8b;
+}
+
+.icon-login .path2:before {
+    content: "\e907";
+    color: #607d8b;
+    margin-left: -1em;
+}
+
+.icon-login .path3:before {
+    content: "\e908";
+    color: #ffc107;
+    margin-left: -1em;
+}
+
+.icon-login .path4:before {
+    content: "\e909";
+    color: #607d8b;
+    margin-left: -1em;
+}
+
+.icon-print:before {
+    content: "\e90a";
+}
+
+.icon-search:before {
+    content: "\e90b";
+}
+
+.icon-plus:before {
+    content: "\e90c";
+}
+
+.icon-cross:before {
+    content: "\e90d";
+}
+
+.icon-edit:before {
+    content: "\e90e";
+}
+
+.icon-save:before {
+    content: "\e90f";
+}
+
+.icon-bon-livraison3:before {
+    content: "\e910";
+}
+
+.icon-devis:before {
+    content: "\e911";
+}
+
+.icon-fournisseur:before {
+    content: "\e912";
+}
+
+.icon-produit:before {
+    content: "\e913";
+}
+
+.icon-recette:before {
+    content: "\e914";
+}
+
+.icon-retour:before {
+    content: "\e915";
+}
+
+.icon-bon-livraison1:before {
+    content: "\e916";
+}
+
+.icon-cheque:before {
+    content: "\e917";
+}
+
+.icon-client:before {
+    content: "\e918";
+}
+
+.icon-arrow-to-left:before {
+    content: "\e919";
+}
+
+.icon-arrow-to-right:before {
+    content: "\e91a";
+}
+
+.icon-param:before {
+    content: "\e91b";
+}

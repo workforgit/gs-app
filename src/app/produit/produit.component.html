@@ -1,0 +1,48 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<app-nav-bar [navBarElements]="navBarElements" (selectedNav)="onSelectNav($event)"></app-nav-bar>
+
+<div class="container-fluid">
+    <div class="row mb-1">
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <label class="mb-0"> Groupe : </label>
+        </div>
+        <div class="col-2  d-flex align-items-center">
+            <select class="form-control"></select>
+        </div>
+        <div class="col-2  d-flex align-items-center">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="inventaire">
+                <label class="custom-control-label" for="inventaire">Inventaire</label>
+            </div>
+        </div>
+
+        <div class="col-3  d-flex align-items-center justify-content-around">
+            <i title="Rechercher" class="icon-search material-icons"></i>
+
+            <i title="Annuler la recherche" class="icon-cross material-icons danger"></i>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <div class="col-11">
+            <ag-grid-angular [style]="gridWith" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+            </ag-grid-angular>
+        </div>
+        <div class="col-1 d-flex flex-column align-items-center justify-content-around">
+
+            <i class="icon-plus material-icons" (click)="addProductDialog()"></i>
+            <i class="icon-edit material-icons success" (click)="modifProductDialog()"></i>
+
+            <i class="icon-trash material-icons danger"></i>
+
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-11 d-flex justify-content-start align-items-center">
+            <button class="btn btn-info mr-1"> Historique </button>
+            <button class="btn btn-info mr-1"> Ajouter un groupe </button>
+            <button class="btn btn-info"> Ajouter annee inventaire </button>
+        </div>
+
+
+    </div>
+</div>

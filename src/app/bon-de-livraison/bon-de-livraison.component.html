@@ -1,0 +1,311 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+
+<div class="container-fluid">
+    <div class="row mb-1 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Client </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Bon de livraison </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Facture </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-1 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Nom   </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Prenom </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Date </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-3 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Adresse </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Tel </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> I.F </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+    <div class="row mb-3 form-row">
+        <div class="col-4 mb-1">
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Quantité</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Groupe de produit</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Produit</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Prix Unit TTC</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Remise</label>
+                </div>
+                <div class="col-6 pr-0">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+                <div class="col-2 pr-0 pl-1">%</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary w-100"> <i class="icon-plus"></i>Ajouter</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <ag-grid-angular [style]="gridWith" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+            </ag-grid-angular>
+        </div>
+    </div>
+
+    <!-- -->
+    <div class="row mb-1 form-row justify-content-between px-1">
+        <label class="mb-0">Base TVA</label>
+        <input type="number" name="bTVA" id="bTVA" class="form-control" style="width: 90px;">
+        <label class="mb-0">Taux</label>
+        <input type="number" name="taux" id="taux" class="form-control" style="width: 90px;">
+        <label class="mb-0">Montant TVA</label>
+        <input type="number" name="mTVA" id="mTVA" class="form-control" style="width: 90px;">
+        <label class="mb-0">Montant AR</label>
+        <input type="number" name="mAR" id="mAR" class="form-control" style="width: 90px;">
+        <label class="mb-0">Montant Net</label>
+        <input type="number" name="mNet" id="mNet" class="form-control" style="width: 90px;">
+    </div>
+    <!-- -->
+    <div class="row mb-1 form-row px-1">
+        <label class="mb-0 mr-4"> Méthode de paiement  :</label>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="espece" value="E" [(ngModel)]="methPaiement" name="methodedepaiement" class="custom-control-input">
+            <label class="custom-control-label" for="espece">Espèce</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="cheque" value="C" [(ngModel)]="methPaiement" name="methodedepaiement" class="custom-control-input">
+            <label class="custom-control-label" for="cheque">Chèque</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="mixte" value="M" [(ngModel)]="methPaiement" name="methodedepaiement" class="custom-control-input">
+            <label class="custom-control-label" for="mixte">Mixte</label>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-1 form-row">
+        <div class="col-4">
+            <div class="row" *ngIf="methPaiement !== 'C'">
+                <div class="col-4">
+                    <label class="mb-0">Montant espèce</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="mEspece" id="mEspece">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Reste Total</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="rTotal" id="rTotal">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Reste</label>
+                </div>
+                <div class="col-6">
+                    <input type="number" class="form-control" name="reste" id="reste">
+                </div>
+                <div class="col-2">
+                    <!-- <i class="icon-plus"></i>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-1 form-row" *ngIf="methPaiement !== 'E'">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Chèque N°</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="chequeN" id="chequeN">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Banque</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="banque" id="banque">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Agence</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="agence" id="agence">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-3 form-row" *ngIf="methPaiement !== 'E'">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Date</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="pDate" id="pDate">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Montant</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="banque" id="banque">
+                </div>
+            </div>
+        </div>
+        <div class="col-4 px-0">
+            <button class="btn btn-link" type="button"> Ajouter un chèque </button>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row justify-content-end px-3">
+        <button type="button" class="btn btn-primary" (click)="imprimFacture()">
+            <i class="icon-print"></i>
+            Imprimer une facture
+        </button>
+
+        <button type="button" class="btn btn-primary mx-3">
+            <i class="icon-print"></i>
+            Imprimer un bon de livraison
+        </button>
+
+        <button type="button" class="btn btn-primary">
+            <i class="icon-save"></i>
+            Sauvegarder
+        </button>
+    </div>
+</div>

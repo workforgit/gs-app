@@ -1,0 +1,24 @@
+<div class="header d-flex justify-content-between">
+
+    <div class="right-footer d-flex ">
+        <img [src]="logoUrl" />
+        <div class="desc-bloc pl-3 d-flex flex-column justify-content-around">
+            <h3>{{ name }}</h3>
+            <h4>{{ desc }}</h4>
+            <h4>{{ address }}</h4>
+            <h5>Tel : {{ tel }}</h5>
+            <h5>Email : {{ email }}</h5>
+        </div>
+
+    </div>
+    <div class="left-footer d-flex justify-content-center align-items-center">
+        <h1 class="factureTitre"> {{ typeDoc | uppercase }} </h1>
+    </div>
+
+</div>
+<div class="body">
+    <router-outlet></router-outlet>
+</div>
+<div class="footer">
+    <h6>{{ name }} Tel : {{ tel }} Email : {{ email }}</h6>
+</div>

@@ -1,0 +1,24 @@
+<div class="wrapper fadeInDown auth-container">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first big-icon">
+            <i class="icon-login"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <label *ngIf="showMsg" class="danger text-danger w-100 " style="font-size: 17px;"> {{errMsg}} </label>
+            <input type="text" autofocus autocomplete="off" id="login" class="fadeIn second" [(ngModel)]="user.id" name="login" placeholder="login">
+            <input type="password" id="password" class="fadeIn third" name="login" [(ngModel)]="user.password" placeholder="password">
+            <button class="fadeIn fourth" type="button" (click)="checkPwd()">Log In</button>
+        </form>
+
+        <!-- <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div> -->
+
+
+    </div>
+</div>

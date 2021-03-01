@@ -1,0 +1,205 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<div class="container-fluid">
+    <div class="row mb-1 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Bon N° </label>
+                </div>
+                <div class="col-8">
+                    <select name="numBon" id="numBon" class="form-control"></select>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- -->
+    <div class="row mb-1 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Nom   </label>
+                </div>
+                <div class="col-8">
+                    <select name="nomFournisseur" id="nomFournisseur" class="form-control"></select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Date </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="date" id="date" class="form-control">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-3 form-row ">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Adresse </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="adresse" id="adresse" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0"> Tel </label>
+                </div>
+                <div class="col-8">
+                    <input type="text" name="client" id="client" class="form-control">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- -->
+    <div class="row mb-3 form-row">
+        <div class="col-4 mb-1">
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Quantité</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Groupe de produit</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Produit</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Prix Unit TTC</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-4">
+                    <label class="mb-0">Remise</label>
+                </div>
+                <div class="col-6 pr-0">
+                    <input type="text" class="form-control" name="qte" id="qte">
+                </div>
+                <div class="col-2 pr-0 pl-1">%</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary w-100"> <i class="icon-plus"></i>Ajouter</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <ag-grid-angular [style]="gridWith" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+            </ag-grid-angular>
+
+        </div>
+    </div>
+    <div class="row mb-1 form-row px-1 mb-3">
+        <div class="col-9"></div>
+        <label for="total" class="col-1 pr-0">Total TTC</label>
+        <div class="col-2 pl-2">
+            <input class="form-control total" type="text" disabled [(ngModel)]="total" id="total">
+        </div>
+    </div>
+
+    <!-- -->
+    <div class="row mb-1 form-row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Chèque N°</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="chequeN" id="chequeN">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Banque</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="banque" id="banque">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Agence</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="agence" id="agence">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row mb-3 form-row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Date</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="pDate" id="pDate">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4">
+                    <label class="mb-0">Montant</label>
+                </div>
+                <div class="col-8">
+                    <input type="number" class="form-control" name="banque" id="banque">
+                </div>
+            </div>
+        </div>
+        <div class="col-4 px-0">
+            <button class="btn btn-link" type="button"> Ajouter un chèque </button>
+        </div>
+    </div>
+    <!-- -->
+    <div class="row justify-content-end px-3">
+
+
+        <button type="button" class="btn btn-primary">
+            <i class="icon-save"></i>
+            Sauvegarder
+        </button>
+    </div>
+</div>

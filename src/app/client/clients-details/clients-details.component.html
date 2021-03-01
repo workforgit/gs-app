@@ -1,0 +1,14 @@
+<div class="row mb-1">
+    <div class="col-11 pr-0" id="clientGrid">
+        <ag-grid-angular rowSelection="single" (selectionChanged)="rowClicked()" (rowDataChanged)="onRowDataChanged()" (gridReady)="onGridReady($event)" (cellValueChanged)="cellValueChanged($event)" [style]="gridWith" class="ag-theme-balham" [rowData]="clients"
+            [columnDefs]="columnDefs">
+        </ag-grid-angular>
+
+    </div>
+    <div class="col-1 d-flex flex-column align-items-center justify-content-around">
+
+        <i class="icon-plus material-icons" (click)="addNewClient()"></i>
+        <i class="icon-trash material-icons danger" (click)="deleteClient()"></i>
+
+    </div>
+</div>

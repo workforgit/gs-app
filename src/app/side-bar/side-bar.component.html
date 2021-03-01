@@ -1,0 +1,14 @@
+<div id="sidebar" class="side-bar-opened">
+    <header class=" header d-flex align-items-center justify-content-between">
+
+        <div class="header-title">Casa Del Ceramico</div>
+        <i id="sideBarIcon" (click)="sideBarClick()" class="icon-arrow-to-left"></i>
+
+    </header>
+    <ul class="nav">
+        <li *ngFor="let elem of sideBarElements" [title]="elem.title" [className]="elem.active?'active':''" attr.id="{{elem.title}}" (click)="goTo(elem.root)">
+            <a><i [className]="'icon-'+elem.icon" ></i> <span class="li-title">{{ elem.title }} </span></a>
+        </li>
+
+    </ul>
+</div>

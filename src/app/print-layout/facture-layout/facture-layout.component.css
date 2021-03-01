@@ -1,0 +1,7 @@
+.facture {
+    page-break-after: always;
+}
+
+.facture:last-child {
+    page-break-after: avoid;
+}

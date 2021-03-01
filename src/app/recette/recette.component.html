@@ -1,0 +1,42 @@
+<app-side-bar [currentMenu]="menu"></app-side-bar>
+<div class="container-fluid">
+    <div class="row mb-1">
+        <div class="col-4">
+            <div class=" row">
+                <label for="datedeb" class="col-4 col-form-label">Date debut</label>
+                <div class="col-8">
+                    <input class="form-control" type="date" value="{{ today | date :'yyyy-MM-dd'}}" id="datedeb">
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class=" row">
+                <label for="datefin" class="col-4 col-form-label">Date fin</label>
+                <div class="col-8">
+                    <input class="form-control" type="date" value="{{ today | date :'yyyy-MM-dd'}}" id="datefin">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+
+            <i class="icon-search material-icons"></i>
+
+        </div>
+
+    </div>
+    <ag-grid-angular [style]="gridWith" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs">
+    </ag-grid-angular>
+    <div class="row mt-2 align-items-center justify-content-between px-3 flex-nowrap">
+        <button class="btn btn-primary w-100"> <i class="icon-print"></i>Imprimer</button>
+        <div class="w-100"></div>
+        <div class="w-100"></div>
+        <div class="w-100"></div>
+        <div class="w-100"></div>
+        <div class="w-100 d-flex justify-content-center align-items-center borderLeft"><label>0.000</label></div>
+        <div class="w-100 d-flex justify-content-center align-items-center borderLeft"><label>0.000</label></div>
+        <div class="w-100 d-flex justify-content-center align-items-center borderLeft"><label>0.000</label></div>
+        <div class="w-100 d-flex justify-content-center align-items-center borderLeft"><label>0.000</label></div>
+
+    </div>
+</div>
