@@ -5,5 +5,5 @@ export class Config {
     public static descEntreprise: string = 'vente articles sanitaires et faience';
     public static adressEntreprise: string = 'L\'aouina Tunis ';
     public static telEntreprise: string = '20123456';
-    public static emailEntreprise: string = 'casa@gmail.com';
+    public static emailEntreprise: string = 'casaDelCeramico@gmail.com';
 }
