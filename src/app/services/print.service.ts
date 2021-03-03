@@ -9,9 +9,10 @@ export class PrintService {
   constructor(private router: Router) { }
   
   isPrinting = false;
-
+  typeDoc = "facture";
   printDocument(documentName: string, documentData: string[]) {
     this.isPrinting = true;
+    this.typeDoc = documentName;
     $("#viewport").addClass("isPrinting");
     $("#docFooterId").addClass("isPrinting");
     this.router.navigate(['/',

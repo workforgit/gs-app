@@ -38,6 +38,7 @@ import { BonDeLivraisonFournisseurComponent } from './bon-de-livraison-fournisse
 import { ParametrageComponent } from './parametrage/parametrage.component';
 import { PrintLayoutComponent } from './print-layout/print-layout.component';
 import { FactureLayoutComponent } from './print-layout/facture-layout/facture-layout.component';
+import { BonDeLivraisonLayoutComponent } from './print-layout/bon-de-livraison-layout/bon-de-livraison-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import { FactureLayoutComponent } from './print-layout/facture-layout/facture-la
     BonDeLivraisonFournisseurComponent,
     ParametrageComponent,
     PrintLayoutComponent,
-    FactureLayoutComponent
+    FactureLayoutComponent,
+    BonDeLivraisonLayoutComponent
   ],
   imports: [
     FormsModule,

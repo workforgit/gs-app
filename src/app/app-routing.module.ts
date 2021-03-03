@@ -1,3 +1,4 @@
+import { BonDeLivraisonLayoutComponent } from './print-layout/bon-de-livraison-layout/bon-de-livraison-layout.component';
 import { FactureLayoutComponent } from './print-layout/facture-layout/facture-layout.component';
 import { PrintLayoutComponent } from './print-layout/print-layout.component';
 import { ParametrageComponent } from './parametrage/parametrage.component';
@@ -62,7 +63,8 @@ const routes: Routes = [
     outlet: 'print',
     component: PrintLayoutComponent,
     children: [
-      { path: 'facture/:factureIds', component: FactureLayoutComponent }
+      { path: 'facture/:factureIds', component: FactureLayoutComponent },
+      { path: 'bondelivraison/:bondelivraisonIds', component: BonDeLivraisonLayoutComponent }
     ]
   },{
     path: '**', 

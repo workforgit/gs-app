@@ -32,4 +32,7 @@ export class BonDeLivraisonComponent implements OnInit {
   imprimFacture(){
     this.printService.printDocument("facture",['1']);
   }
+  imprimBondelivraison(){
+    this.printService.printDocument("bondelivraison",['1']);
+  }
 }

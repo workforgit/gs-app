@@ -1,5 +1,6 @@
 import { Config } from './../config';
 import { Component, OnInit } from '@angular/core';
+import { PrintService } from '../services/print.service';
 
 @Component({
   selector: 'app-print-layout',
@@ -13,8 +14,11 @@ export class PrintLayoutComponent implements OnInit {
   name = Config.nomEntreprise;
   tel = Config.telEntreprise;
   email = Config.emailEntreprise;
-  constructor() { }
   typeDoc = "facture";
+  constructor(private printService: PrintService) {
+    this.typeDoc = this.printService.typeDoc;
+    if(this.typeDoc == "bondelivraison") this.typeDoc = "bon de livraison";
+  }  
   ngOnInit(): void {
   }
 

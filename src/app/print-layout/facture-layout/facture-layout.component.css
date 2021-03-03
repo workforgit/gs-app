@@ -1,7 +1,7 @@
-.facture {
+.print-body {
     page-break-after: always;
 }
 
-.facture:last-child {
+.print-body:last-child {
     page-break-after: avoid;
 }
